@@ -3,8 +3,11 @@ export const keysDown = new Map();
 let lastTouchedId;
 
 export function initTouchControls(buttonMap) {
+<<<<<<< Updated upstream
   const dpadDiv = document.querySelector("#dpad");
   preventElementZoom(dpadDiv);
+=======
+>>>>>>> Stashed changes
   for (const button of document.querySelectorAll("[data-key]")) {
     // @ts-ignore
     bindKey(button, button.dataset.key, buttonMap);
@@ -117,6 +120,7 @@ function bindKey(node, key, buttonMap) {
     }
   });
 }
+<<<<<<< Updated upstream
 
 /**
  * {@link https://stackoverflow.com/a/39778831/4622620|Source}
@@ -140,3 +144,5 @@ function preventElementZoom(element) {
     event.target.click();
   });
 }
+=======
+>>>>>>> Stashed changes
